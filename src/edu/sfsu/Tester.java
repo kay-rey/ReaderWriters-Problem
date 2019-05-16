@@ -11,7 +11,7 @@ public class Tester {
 
     private String[] keys = new String[MAX_INSERT_THREADS];
     private String[] values = new String[MAX_INSERT_THREADS];
-    private ConcurrentHashTable<String, String> table = ConcurrentHashTable.create(10);
+    private ConcurrentHashTable<String, String> table = ConcurrentHashTable.create(2);
     private AtomicInteger mismatch_count =  new AtomicInteger(0);
 
 
